@@ -7,4 +7,5 @@ psycopg2==2.8.5
 pytz==2020.1
 sqlparse==0.3.1
 whitenoise==5.2.0
+numpy==1.19.1
 http://download.pytorch.org/whl/cpu/torch-0.4.1-cp36-cp36m-linux_x86_64.whl

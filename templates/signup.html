@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container" style="margin-top: 20px;">
+  <form method="POST" action="{% url 'signup' %}">{% csrf_token %}
+    <!-- ユーザー名の入力フォーム -->
+    <div style="margin-top: 20px;">
+      <label>{{ form.username.help_text }}</label>
+      {{ form.username }}
+      {{ form.username.errors }}
+    </div>
+    <!-- パスワード①の入力フォーム -->
+    <div style="margin-top: 20px;">
+      <label>{{ form.password1.help_text }}</label>
+      {{ form.password1 }}
+      {{ form.password1.errors }}
+    </div>
+    <!-- パスワード②の入力フォーム -->
+      <div style="margin-top: 20px;">
+      <label>{{ form.password2.help_text }}</label>
+      {{ form.password2 }}
+      {{ form.password2.errors }}
+    </div>
+    <!-- 登録ボタン -->
+    <div style="padding-top: 20px;">
+    <button class="btn btn-primary" type = "submit">登録</button>
+  </div>
+  </form>
+</div>
+{% endblock %}

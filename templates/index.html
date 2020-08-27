@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div>
+    <!-- mt:margin_top mb:margin_bottom -->
+    <h3 class="mt-4 mb-5 border-bottom" style='color:green;'>アニマル画像判定アプリ</h3>
+    <p>画像ファイルを選択して推定ボタンをクリックしてください。</p>
+
+    <form  method="POST" class="form" enctype="multipart/form-data">{% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit" class="inference btn btn-success" style=margin-top:30px;>推論する</button>
+    </form>
+  </div>
+{% endblock %}

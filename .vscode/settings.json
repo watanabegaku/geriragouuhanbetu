@@ -1,0 +1,4 @@
+{
+  "git.ignoreLimitWarning": true,
+  "python.pythonPath": "djangovenv/bin/python3"
+}

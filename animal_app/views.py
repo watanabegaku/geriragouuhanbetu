@@ -52,12 +52,12 @@ def classify(request):
     image = np.array(image_pil_mode, dtype='uint8')
     x = predict.transform(image)
     x = x.unsqueeze(0)
-
+    device = torch.device('cpu')
     # モデルのインスタンス化（モジュール名.クラス名）
     net = predict.Net()
+    net = net.to(device)
 
     # パラメーターの読み込み
-    device = torch.device('cpu')
     net.load_state_dict(torch.load('model/animal_model.pt', map_location=device))
     net.eval()
 

@@ -49,5 +49,5 @@ Werkzeug==1.0.1
 whitenoise==5.2.0
 zipp==3.1.0
 # http://download.pytorch.org/whl/cpu/torch-0.4.1-cp36-cp36m-linux_x86_64.whl
-torchvision==0.4.0+cpu
-torch==1.3.0+cpu
+http://download.pytorch.org/whl/torch-0.3.0.post4-cp36-cp36m-macosx_10_7_x86_64.whl 
+torchvision==0.3.0

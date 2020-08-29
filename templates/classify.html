@@ -13,16 +13,16 @@
       <tbody>
         <tr>
           <td>動物名</td>
-          <td><h4 class="label">{% if y_arg == 0%}パンダ{% elif y_arg == 1 %}ゾウ{% elif y_arg == 2 %}ホッキョクグマ{% else %}ゴリラ{% endif %}</h4></td>
+          <td><h4 id="label">{% if y_arg == 0%}パンダ{% elif y_arg == 1 %}ゾウ{% elif y_arg == 2 %}ホッキョクグマ{% else %}ゴリラ{% endif %}</h4></td>
         </tr>
         <tr>
         <tr>
           <td>画像ファイル</td>
-          <td><img src={{ img_url }} class="prob_img" alt="画像が見つかりませんでした。"></img></td>
+          <td><img src={{ img_url }} id="prob_img" alt="画像が見つかりませんでした。"></img></td>
         </tr>
         <tr>
           <td>信頼度</td>
-          <td><h4 class="proba">{{ y_proba }} %</h4></td>
+          <td><h4 id="proba">{{ y_proba }} %</h4></td>
         </tr>
         <tr>
           <td>アニマル豆知識</td>

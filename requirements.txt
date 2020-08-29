@@ -42,11 +42,11 @@ six==1.15.0
 sqlparse==0.3.1
 tensorboard==2.2.0
 tensorboard-plugin-wit==1.7.0
-torchvision==0.7.0
+torchvision==0.4.1
 tqdm==4.48.2
 Unidecode==1.1.1
 urllib3==1.25.10
 Werkzeug==1.0.1
 whitenoise==5.2.0
 zipp==3.1.0
-https://download.pytorch.org/whl/torch-0.1.6.post20-cp35-cp35m-linux_x86_64.whl
+http://download.pytorch.org/whl/cpu/torch-0.4.1-cp36-cp36m-linux_x86_64.whl

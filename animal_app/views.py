@@ -57,7 +57,8 @@ def classify(request):
     net = predict.Net()
 
     # パラメーターの読み込み
-    net.load_state_dict(torch.load('model/animal_model.pt'))
+    device = torch.device('cpu')
+    net.load_state_dict(torch.load('model/animal_model.pt', map_location=device))
     net.eval()
 
     # 推論、予測値の計算

@@ -101,4 +101,4 @@ def signup(request):
         return redirect('classify')
   else:
     form = SignUpForm()
-    return render(request, 'signup.html', {'form': form})
+    return render(request, 'signup.html')

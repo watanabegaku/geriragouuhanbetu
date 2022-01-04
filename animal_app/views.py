@@ -98,7 +98,7 @@ def signup(request):
       new_user = authenticate(username=username, password=password)
       if new_user is not None:
         login(request, new_user)
-        return redirect('classify')
+        return render(request, 'classify.html')
   else:
     form = SignUpForm()
-    return render(request, 'signup.html')
+    return render(request, 'classify.html')

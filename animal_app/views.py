@@ -99,6 +99,9 @@ def signup(request):
       if new_user is not None:
         login(request, new_user)
         return redirect('classify')
+    else:
+      form=SignUpForm()
+      return render(request, 'signup.html', {'form':form})
   else:
     form = SignUpForm()
     return render(request, 'signup.html',{'form':form})

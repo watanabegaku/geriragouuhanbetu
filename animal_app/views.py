@@ -58,7 +58,7 @@ def classify(request):
     net = net.to(device)
 
     # パラメーターの読み込み
-    net.load_state_dict(torch.load('model/animal_model.pt', map_location=device))
+    net.load_state_dict(torch.load('model/thunder.pt', map_location=device))
     net.eval()
 
     # 推論、予測値の計算

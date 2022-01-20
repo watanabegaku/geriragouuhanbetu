@@ -3,20 +3,20 @@
 
 <head>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <title>{% block title %}アニマル図鑑{% endblock %}</title>
+  <title>{% block title %}ゲリラ豪雨予想{% endblock %}</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-light" style="background-color: #15b7b9;">
+  <nav class="navbar navbar-light" style="background-color: #1157ee;">
     <a href="/" style="color:white">
-      <h3> アニマル図鑑 </h3>
-      <span>パンダ、ゾウ、ホッキョクグマ、ゴリラ</span>
+      <h3> ゲリラ豪雨危険性 </h3>
+      <span>安全、ゲリラ豪雨！注意、竜巻発生！危険</span>
     </a>
     {% if user.is_authenticated %}
     <span class="col s6" style="font-size:15px; text-align: right;">
       <a id="logout" href="{% url 'logout' %}" style="color:white; text-decoration: underline;">
       こんにちは、{{ user.username}}さん
-      </a>
+      </げり
     </span>
     {% endif %}
   </nav>

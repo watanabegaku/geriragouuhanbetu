@@ -58,7 +58,7 @@ def classify(request):
     net = net.to(device)
 
     # パラメーターの読み込み
-    net.load_state_dict(torch.load('model/thunder.pt', map_location=device))
+    net.load_state_dict(torch.load('model/thunder.pt', map_location=device),strict=False)
     net.eval()
 
     # 推論、予測値の計算
@@ -105,3 +105,5 @@ def signup(request):
   else:
     form = SignUpForm()
     return render(request, 'signup.html',{'form':form})
+
+    

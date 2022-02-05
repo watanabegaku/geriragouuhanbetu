@@ -22,7 +22,7 @@ class Net(pl.LightningModule):
         super().__init__()
 
         self.conv = resnet18(pretrained=False)
-        self.fc = nn.Linear(1000,3)
+        self.fc = nn.Linear(1000,2)
 
     def forward(self, x):
         x = self.conv(x)

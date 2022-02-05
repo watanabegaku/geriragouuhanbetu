@@ -25,7 +25,7 @@ def classify(request):
   animals_info = list(ModelAnimal.objects.all())
   # もしanimals_info が空ならば animal_data2.csv をモデルに保存
   if not animals_info:
-    with open('static/data/animal_data.csv', encoding='utf-8') as f:
+    with open('static/data/tenki_data.csv', encoding='utf-8') as f:
       csv_data = csv.reader(f)
       # csvデータをdataリストに保存
       data = []
@@ -58,7 +58,7 @@ def classify(request):
     net = net.to(device)
 
     # パラメーターの読み込み
-    net.load_state_dict(torch.load('model/thunder.pt', map_location=device),strict=False)
+    net.load_state_dict(torch.load('model/thunder(1).pt', map_location=device),strict=False)
     net.eval()
 
     # 推論、予測値の計算

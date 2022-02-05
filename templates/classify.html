@@ -12,8 +12,8 @@
       </thead>
       <tbody>
         <tr>
-          <td>動物名</td>
-          <td><h4 id="label">{% if y_arg == 0%}安全{% elif y_arg == 1 %}ゲリラ豪雨！注意{% elif y_arg == 2 %}竜巻発生！危険{% else %}ホッキョクグマ{% endif %}</h4></td>
+          <td>ゲリラ豪雨予想</td>
+          <td><h4 id="label">{% if y_arg == 0%}安全{% else %}ゲリラ豪雨注意{% endif %}</h4></td>
         </tr>
         <tr>
         <tr>
@@ -25,7 +25,7 @@
           <td><h4 id="proba">{{ y_proba }} %</h4></td>
         </tr>
         <tr>
-          <td>アニマル豆知識</td>
+          <td>注意点</td>
           <td>{{ animal_info.animal_title }} </td>
         </tr>
         <tr>
